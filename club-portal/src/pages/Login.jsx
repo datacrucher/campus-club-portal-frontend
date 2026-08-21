@@ -43,7 +43,7 @@ export default function Login({ onLogin }) {
   return (
     <section className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-5 py-14 sm:px-8">
       <span className="eyebrow">Welcome back</span>
-      <h1 className="mt-3 font-display text-3xl font-semibold">Log in to your ID</h1>
+      <h1 className="mt-3 font-display text-3xl font-bold">Log in to your ID</h1>
       <p className="mt-3 text-sm leading-relaxed text-slate">
         Check your application status, or view your active club membership card.
       </p>

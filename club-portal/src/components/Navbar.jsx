@@ -11,7 +11,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const linkClass = ({ isActive }) =>
-    `font-display text-sm font-medium transition-colors hover:text-violet ${
+    `font-display text-sm font-bold transition-colors hover:text-violet ${
       isActive ? 'text-violet' : 'text-ink'
     }`
 
@@ -22,7 +22,7 @@ export default function Navbar() {
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-ink font-display text-sm font-bold text-paper">
             C
           </span>
-          <span className="font-display text-base font-semibold tracking-tight">Campus Clubs</span>
+          <span className="font-display text-base font-bold tracking-tight">Campus Clubs</span>
         </Link>
 
         {/* Desktop links */}

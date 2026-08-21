@@ -35,19 +35,19 @@ export default function ClubIDCard({
       </div>
 
       <div className="mt-6 flex items-center gap-4">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-violet font-display text-lg font-semibold text-paper">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-violet font-display text-lg font-bold text-paper">
           {name.trim().charAt(0).toUpperCase() || '?'}
         </div>
         <div className="min-w-0">
-          <p className="truncate font-display text-lg font-semibold leading-tight text-ink">{name}</p>
-          <p className="truncate text-sm text-slate">{club}</p>
+          <p className="truncate font-display text-lg font-bold leading-tight text-ink">{name}</p>
+          <p className="truncate text-sm font-bold text-slate">{club}</p>
         </div>
       </div>
 
       <div className="mt-6 flex items-end justify-between border-t border-dashed border-ink/20 pt-3">
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-wider text-slate">Member No.</p>
-          <p className="font-mono text-sm font-medium text-ink">{memberId}</p>
+          <p className="font-mono text-[10px] uppercase font-bold tracking-wider text-slate">Member No.</p>
+          <p className="font-mono text-sm font-bold text-ink">{memberId}</p>
         </div>
         <div className="grid grid-cols-3 gap-0.5">
           {Array.from({ length: 9 }).map((_, i) => (
