@@ -65,7 +65,7 @@ export default function Register() {
     return (
       <section className="mx-auto max-w-lg px-5 py-24 text-center sm:px-8">
         <span className="eyebrow">Application received</span>
-        <h1 className="mt-3 font-display text-3xl font-semibold">You're on the list, {form.fullName.split(' ')[0]}.</h1>
+        <h1 className="mt-3 font-display text-3xl font-bold">You're on the list, {form.fullName.split(' ')[0]}.</h1>
         <p className="mt-4 text-sm leading-relaxed text-slate">
           Your application to {form.club} is pending approval. Log in anytime to check your
           member status and ID card.
@@ -85,7 +85,7 @@ export default function Register() {
   return (
     <section className="mx-auto max-w-2xl px-5 py-14 sm:px-8 sm:py-20">
       <span className="eyebrow">Registration</span>
-      <h1 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">Join a club</h1>
+      <h1 className="mt-3 font-display text-3xl font-bold sm:text-4xl">Join a club</h1>
       <p className="mt-3 text-sm leading-relaxed text-slate">
         Fill this out once. You can apply to more clubs later from your dashboard without
         re-entering your details.

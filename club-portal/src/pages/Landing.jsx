@@ -57,14 +57,14 @@ export default function Landing() {
       {/* How it works */}
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
         <span className="eyebrow">How it works</span>
-        <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">Three steps, no queues</h2>
+        <h2 className="mt-3 font-display text-2xl font-bold sm:text-3xl">Three steps, no queues</h2>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
           {steps.map((step, i) => (
             <div key={step.title} className="rounded-lg border-2 border-ink/10 bg-white p-6">
-              <span className="font-mono text-xs text-violet-light">0{i + 1}</span>
-              <h3 className="mt-3 font-display text-lg font-semibold">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate">{step.body}</p>
+              <span className="font-mono text-xs font-bold text-violet-light">0{i + 1}</span>
+              <h3 className="mt-3 font-display text-lg font-bold">{step.title}</h3>
+              <p className="mt-2 text-sm font-bold leading-relaxed text-slate">{step.body}</p>
             </div>
           ))}
         </div>
@@ -76,9 +76,9 @@ export default function Landing() {
           <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
             <div>
               <span className="eyebrow">Directory</span>
-              <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">Clubs open for registration</h2>
+              <h2 className="mt-3 font-display text-2xl font-bold sm:text-3xl">Clubs open for registration</h2>
             </div>
-            <p className="text-sm text-slate">{clubs.length} clubs accepting members this semester</p>
+            <p className="text-sm font-bold text-slate">{clubs.length} clubs accepting members this semester</p>
           </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -88,16 +88,16 @@ export default function Landing() {
                 className="flex flex-col justify-between rounded-lg border-2 border-ink bg-paper p-5 shadow-[4px_4px_0_0_#17171F] transition-transform hover:-translate-y-0.5"
               >
                 <div>
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-violet-light">
+                  <span className="font-mono text-[10px] uppercase font-bold tracking-wider text-violet-light">
                     {club.category}
                   </span>
-                  <h3 className="mt-2 font-display text-base font-semibold leading-snug">{club.name}</h3>
+                  <h3 className="mt-2 font-display text-base font-bold leading-snug">{club.name}</h3>
                 </div>
                 <div className="mt-6 flex items-center justify-between">
-                  <span className="text-xs text-slate">{club.members} members</span>
+                  <span className="text-xs font-bold text-slate">{club.members} members</span>
                   <Link
                     to="/register"
-                    className="font-display text-xs font-semibold text-violet hover:underline"
+                    className="font-display text-xs font-bold text-violet hover:underline"
                   >
                     Join →
                   </Link>
